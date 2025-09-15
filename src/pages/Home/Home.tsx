@@ -86,7 +86,7 @@ const Home: React.FC<IHome> = ({
             width: "100vw",
           }}
         >
-          <img style={{ width: "300px" }} src={loading} alt="loading..." />
+          <img style={{ width: "301px" }} src={loading} alt="loading..." />
           <div>
             <Title
               strokeColor="black"
