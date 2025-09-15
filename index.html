@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="margin-top: -40px;">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="src/assets/dog-face.svg" />
@@ -8,6 +8,14 @@
   </head>
   <body>
     <div id="root"></div>
+    
+    <script type="module">
+  import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+  window.addEventListener("load", () => {
+    new fairyDustCursor();
+  });
+</script>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

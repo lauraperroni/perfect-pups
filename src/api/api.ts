@@ -1,6 +1,5 @@
 import axios, { type AxiosResponse } from "axios";
 
-// Create an instance of axios with some default configuration
 const apiClient = axios.create({
   baseURL: "https://dog.ceo/api",
   headers: {
