@@ -2,6 +2,8 @@
 
 This project is being made as a practice for my overall Front-End skills, heres a brief description of it:
 
+## Deployment worked on surge.sh
+https://perfect-pups.surge.sh
 
 ### I will be implementing this API to use some endpoints: 
 
