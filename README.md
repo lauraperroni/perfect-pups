@@ -14,4 +14,6 @@ https://dog.ceo/dog-api/documentation
 - **Home:** where the API will be called
 - **Gallery:** where the images will appear
 
+The premise is to consume an external API, work with multiple components, show data on screen, learn hooks and props properly, needs to have 2 pages that converse with each other, and be minimally responsive.
+
 This README so far sucks, but will be better *some day hehehe* 
