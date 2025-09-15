@@ -1,17 +1,25 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Gallery from "./pages/Gallery/Gallery";
+import rainbow from "./assets/rainbow.jpeg";
+import ReactProject from "./pages";
 
 function App() {
   return (
-    <>
+    <div
+      style={{
+        backgroundImage: `url(${rainbow})`,
+        backgroundRepeat: "repeat",
+        backgroundSize: "2400px",
+        minHeight: "105.3vh",
+        paddingTop: "100px",
+      }}
+    >
       <Router>
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/gallery" element={<Gallery />} />
+          {" "}
+          <Route path="" element={<ReactProject />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 
