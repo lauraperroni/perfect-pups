@@ -39,7 +39,7 @@ const Home: React.FC<IHome> = ({
     setIsLoading(true);
     try {
       const houndImage = await dogsApi.getRandomByBreed(selectedBreed);
-      setRandomDogImage(houndImage.message);
+      setRandomDogImage(houndImage);
       setAllDogImages({ message: [], status: "" });
       setPageSection("gallery");
       setPageType(PageTypeEnum.RANDOM);
