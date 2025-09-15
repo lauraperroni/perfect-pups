@@ -1,13 +1,36 @@
+import { SupaDupaCoolTitle } from "./styles.ts";
 
 interface TitleProps {
   titleText: string;
+  color?: string;
+  fontSize?: string;
+  align?: "left" | "center" | "right";
+  strokeColor?: string;
+  strokeWidth?: string;
+  className?: string;
 }
 
-const Home: React.FC<TitleProps> = ({ titleText }) => {
+const Title: React.FC<TitleProps> = ({
+  titleText,
+  color,
+  fontSize,
+  align = "center",
+  strokeColor,
+  strokeWidth,
+  className,
+}) => {
   return (
-    <>
-      <h1 style={{ color: "pink" }}>{titleText}</h1>
-    </>
+    <SupaDupaCoolTitle
+      color={color}
+      fontSize={fontSize}
+      align={align}
+      strokeColor={strokeColor}
+      strokeWidth={strokeWidth}
+      className={className}
+    >
+      {titleText}
+    </SupaDupaCoolTitle>
   );
 };
-export default Home;
+
+export default Title;
