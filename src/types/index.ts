@@ -1,18 +1,22 @@
-export interface IRandomDogImage {
+export type TRandomDogImage = {
   message: string;
   status: string;
-}
+};
 
-export interface IBreedsList {
+export type TAllDogImages = {
+  message: string[];
+  status: string;
+};
+
+export type TBreedsList = {
   message: {
     [breed: string]: string[];
   };
   status: string;
-}
+};
 
-export interface IAllDogImages {
-  message: {
-    [image: string]: string[];
-  };
-  status: string;
+export enum PageTypeEnum {
+  RANDOM = 'RANDOM',
+  ALL = 'ALL',
+  NONE = 'NONE',
 }
