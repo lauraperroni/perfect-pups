@@ -153,7 +153,7 @@ const Gallery: React.FC<IGallery> = ({
                 <div>
                   <Title titleText={"HERES YOUR PUPPY :3"} fontSize="28px" />
                   <img
-                    src={randomDogImage as unknown as string}
+                    src={randomDogImage.message}
                     style={{
                       width: "300px",
                       height: "300px",
